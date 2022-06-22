@@ -39,7 +39,22 @@
     <div class="col-md-6">
       <div class="from-group">
         <label class="mb-1"> Tutar</label>
-        <p>{{amount |number }}</p>
+        <p>{{amount |currency:'JPY'}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="from-group">
+        <label class="mb-1"> Boy</label>
+        <input type="number" class="form-control"  (input)="onHeigtChange($event)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="from-group">
+        <label class="mb-1"> Boy</label>
+        <p>{{height | number:'1.1-4'}}</p>
       </div>
     </div>
   </div>
